@@ -1,0 +1,72 @@
+<html>
+ <head>
+      <title>Penyewaan Gedung Premium</title>
+      <link rel="stylesheet" href="style.css"/>
+ </head>
+ <body >
+    <div class="header">
+        <div class="jarak">
+            <h2>Penyewaan Gedung Ballroom</h2>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html" class="undecor">About Us</a></li>
+            <li><a href="reservasi.html" class="undecor">Reservation</a></li>
+            <li><a href="kontak.html" class="undecor">Contact Us</a></li>
+        </ul>
+    </div>
+
+<div class="sewa">  
+  <form id="reservation-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="alamat">Alamat:</label>
+    <textarea id="alamat" name="alamat"></textarea><br><br>
+    
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date"><br><br>
+    
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time"><br><br>
+
+    <label for="layanan">Layanan:</label>
+    <select id="layanan" name="layanan">
+      <option value="-"></option>
+      <option value="Room Only">Room Only</option>
+      <option value="Wedding Package">Wedding Package</option>
+      <option value="Meeting Package">Meeting Package</option>
+      <option value="Wisuda Package">Wisuda Package</option>
+    </select><br><br>
+
+    <label>Pelayanan</label>
+    <input type="checkbox" id="catering" name="pelayanan" value="catering">
+    <label for="catering">catering</label>
+    <input type="checkbox" id="photography" name="pelayanan" value="photography">
+    <label for="photography">photography</label>
+    <input type="checkbox" id="wedding organizer" name="pelayanan" value="wedding organizer">
+    <label for="wedding organizer">wedding organizer</label>
+    <br><br>
+
+    <label>Pembayaran:</label><br>
+      <input type="radio" id="cash" name="bayar" value="Cash">
+      <label for="cash">Cash</label><br>
+  
+      <input type="radio" id="transfer" name="bayar" value="Transfer">
+      <label for="transfer">Transfer</label>
+    <br><br>
+    
+    <input type="button" value="Submit" onclick="saveReservation()">
+  </form>
+</div>  
+</body>
+<script src="reservasi.js"></script>
+</html>
